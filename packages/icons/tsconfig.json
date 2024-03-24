@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "jsx": "react-native",
+  },
+  "include": [
+    "src/**/*",
+    "declarations.d.ts" // svg support
+  ],
+}

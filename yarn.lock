@@ -1945,6 +1945,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@packages/dynamic-config@workspace:packages/dynamic-config":
+  version: 0.0.0-use.local
+  resolution: "@packages/dynamic-config@workspace:packages/dynamic-config"
+  dependencies:
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
+"@packages/icons@workspace:packages/icons":
+  version: 0.0.0-use.local
+  resolution: "@packages/icons@workspace:packages/icons"
+  dependencies:
+    "@types/react": "npm:^18.2.67"
+    "@types/react-native": "npm:^0.73.0"
+    react: "npm:18.2.0"
+    react-native: "npm:0.73.6"
+    typescript: "npm:5.4.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "@packages/metadata-cache@workspace:^, @packages/metadata-cache@workspace:packages/metadata-cache":
   version: 0.0.0-use.local
   resolution: "@packages/metadata-cache@workspace:packages/metadata-cache"
@@ -2016,11 +2039,50 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@packages/rx-network@workspace:packages/rx-network":
+  version: 0.0.0-use.local
+  resolution: "@packages/rx-network@workspace:packages/rx-network"
+  dependencies:
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
+"@packages/rx-realm@workspace:packages/rx-realm":
+  version: 0.0.0-use.local
+  resolution: "@packages/rx-realm@workspace:packages/rx-realm"
+  dependencies:
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
+"@packages/serialization@workspace:packages/serialization":
+  version: 0.0.0-use.local
+  resolution: "@packages/serialization@workspace:packages/serialization"
+  dependencies:
+    typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
 "@packages/ts-kit@workspace:^, @packages/ts-kit@workspace:packages/ts-kit":
   version: 0.0.0-use.local
   resolution: "@packages/ts-kit@workspace:packages/ts-kit"
   dependencies:
     typescript: "npm:5.4.3"
+  languageName: unknown
+  linkType: soft
+
+"@packages/ui-kit@workspace:packages/ui-kit":
+  version: 0.0.0-use.local
+  resolution: "@packages/ui-kit@workspace:packages/ui-kit"
+  dependencies:
+    "@types/react": "npm:^18.2.67"
+    "@types/react-native": "npm:^0.73.0"
+    react: "npm:18.2.0"
+    react-native: "npm:0.73.6"
+    typescript: "npm:5.4.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
   languageName: unknown
   linkType: soft
 
