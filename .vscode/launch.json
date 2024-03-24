@@ -5,12 +5,23 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug Demo",
+      "name": "Debug demo",
       "cwd": "${workspaceFolder}/apps/demo",
       "type": "reactnative",
       "request": "launch",
       "platform": "ios",
       "target": "iPhone 15"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug playground",
+      "program": "${workspaceFolder}/apps/playground/src/index.ts",
+      "runtimeExecutable": "${workspaceFolder}/apps/playground/node_modules/.bin/babel-node",
+      "runtimeArgs": ["-x", ".ts", "--nolazy"],
+      "env": {
+        "BABEL_ENV": "development"
+      }
     }
   ]
 }
