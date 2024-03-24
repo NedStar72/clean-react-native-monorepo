@@ -1,0 +1,20 @@
+{
+  "name": "@packages/di-engine",
+  "private": true,
+  "source": "src/index.ts",
+  "react-native": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "reflect-metadata": "*"
+  },
+  "dependencies": {
+    "@packages/metadata": "workspace:^",
+    "@packages/metadata-cache": "workspace:^",
+    "inversify": "^6.0.2"
+  },
+  "devDependencies": {
+    "@packages/ts-kit": "workspace:^",
+    "reflect-metadata": "^0.2.1",
+    "typescript": "5.4.3"
+  }
+}

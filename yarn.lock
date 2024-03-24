@@ -1930,7 +1930,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@packages/metadata-cache@workspace:packages/metadata-cache":
+"@packages/di-engine@workspace:packages/di-engine":
+  version: 0.0.0-use.local
+  resolution: "@packages/di-engine@workspace:packages/di-engine"
+  dependencies:
+    "@packages/metadata": "workspace:^"
+    "@packages/metadata-cache": "workspace:^"
+    "@packages/ts-kit": "workspace:^"
+    inversify: "npm:^6.0.2"
+    reflect-metadata: "npm:^0.2.1"
+    typescript: "npm:5.4.3"
+  peerDependencies:
+    reflect-metadata: "*"
+  languageName: unknown
+  linkType: soft
+
+"@packages/metadata-cache@workspace:^, @packages/metadata-cache@workspace:packages/metadata-cache":
   version: 0.0.0-use.local
   resolution: "@packages/metadata-cache@workspace:packages/metadata-cache"
   dependencies:
@@ -5519,6 +5534,13 @@ __metadata:
   dependencies:
     loose-envify: "npm:^1.0.0"
   checksum: 10/cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
+  languageName: node
+  linkType: hard
+
+"inversify@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "inversify@npm:6.0.2"
+  checksum: 10/0e4d07fb2dac82d21f55c711cdf35f9f75656c3f4651b8dd27f5aa3dcb154ad492ebdd0a66fbe394ac090aac0728da999d2a1c7ed62b5d8c772cad06e1684483
   languageName: node
   linkType: hard
 
