@@ -1,0 +1,71 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "@react-native",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": [
+      "./tsconfig.json",
+      "./apps/*/tsconfig.json",
+      "./features/**/*/tsconfig.json",
+      "./packages/*/tsconfig.json"
+    ]
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "@react-native", "prettier"],
+  "rules": {
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": ["error", { "allow": ["_container"] }],
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/jsx-curly-brace-presence": ["error", { "props": "always", "children": "always" }],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/ban-ts-comment": ["error", { "ts-expect-error": false }],
+    "@typescript-eslint/lines-between-class-members": [
+      "error",
+      {
+        "enforce": [{ "blankLine": "never", "prev": "field", "next": "field" }]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "18"
+    }
+  }
+}
