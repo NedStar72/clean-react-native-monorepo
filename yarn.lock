@@ -1930,7 +1930,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@packages/metadata@workspace:packages/metadata":
+"@packages/metadata-cache@workspace:packages/metadata-cache":
+  version: 0.0.0-use.local
+  resolution: "@packages/metadata-cache@workspace:packages/metadata-cache"
+  dependencies:
+    "@packages/metadata": "workspace:^"
+    "@packages/ts-kit": "workspace:^"
+    reflect-metadata: "npm:^0.2.1"
+    typescript: "npm:5.4.3"
+  peerDependencies:
+    reflect-metadata: "*"
+  languageName: unknown
+  linkType: soft
+
+"@packages/metadata@workspace:^, @packages/metadata@workspace:packages/metadata":
   version: 0.0.0-use.local
   resolution: "@packages/metadata@workspace:packages/metadata"
   dependencies:
