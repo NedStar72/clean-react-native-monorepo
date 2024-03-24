@@ -1,0 +1,15 @@
+{
+  "name": "@packages/metadata",
+  "private": true,
+  "source": "src/index.ts",
+  "react-native": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "reflect-metadata": "*"
+  },
+  "devDependencies": {
+    "@packages/ts-kit": "workspace:^",
+    "reflect-metadata": "^0.2.1",
+    "typescript": "5.4.3"
+  }
+}
