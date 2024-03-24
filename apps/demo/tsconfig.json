@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "jsx": "react-native",
-    "types": ["react-native"],
+    "types": ["react-native", "reflect-metadata"],
     "allowJs": true,
     "isolatedModules": true,
     "resolveJsonModule": true,

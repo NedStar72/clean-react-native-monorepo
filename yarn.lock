@@ -27,15 +27,25 @@ __metadata:
   resolution: "@apps/demo@workspace:apps/demo"
   dependencies:
     "@babel/core": "npm:^7.24.3"
+    "@babel/plugin-proposal-decorators": "npm:^7.24.1"
     "@babel/preset-env": "npm:^7.24.3"
     "@babel/runtime": "npm:^7.24.1"
+    "@packages/di-engine": "workspace:^"
+    "@packages/navigation": "workspace:^"
+    "@packages/react-utils": "workspace:^"
     "@react-native/babel-preset": "npm:^0.73.21"
     "@react-native/metro-config": "npm:^0.73.5"
+    "@react-navigation/bottom-tabs": "npm:^6.5.20"
+    "@react-navigation/native": "npm:^6.1.17"
+    "@react-navigation/native-stack": "npm:^6.9.26"
     "@types/react": "npm:^18.2.67"
     "@types/react-native": "npm:^0.73.0"
     react: "npm:18.2.0"
     react-native: "npm:0.73.6"
     react-native-monorepo-tools: "npm:^1.2.1"
+    react-native-safe-area-context: "npm:^4.9.0"
+    react-native-screens: "npm:^3.29.0"
+    reflect-metadata: "npm:^0.2.1"
     typescript: "npm:5.4.3"
   languageName: unknown
   linkType: soft
@@ -438,6 +448,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-decorators@npm:^7.24.1":
+  version: 7.24.1
+  resolution: "@babel/plugin-proposal-decorators@npm:7.24.1"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": "npm:^7.24.1"
+    "@babel/helper-plugin-utils": "npm:^7.24.0"
+    "@babel/plugin-syntax-decorators": "npm:^7.24.1"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10/cbc489ae3ebe5216a4d764a6d155591282e819b6b7436c4cffbb8f123515a1db9cc2f84259c36d558f896e8ff8526ebd28d3563fabb04347ae1964c476b44b9f
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-proposal-export-default-from@npm:^7.0.0":
   version: 7.24.1
   resolution: "@babel/plugin-proposal-export-default-from@npm:7.24.1"
@@ -553,6 +576,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 10/3e80814b5b6d4fe17826093918680a351c2d34398a914ce6e55d8083d72a9bdde4fbaf6a2dcea0e23a03de26dc2917ae3efd603d27099e2b98380345703bf948
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-decorators@npm:^7.24.1":
+  version: 7.24.1
+  resolution: "@babel/plugin-syntax-decorators@npm:7.24.1"
+  dependencies:
+    "@babel/helper-plugin-utils": "npm:^7.24.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10/6e70d64b6ce6843dd388740eef032c5a013b6b873e3a6ccdb41f342b91b49d4dac1ce5daac32f588c66815047ce00bab0785a8a45d724e6dce9f49bff01fb24e
   languageName: node
   linkType: hard
 
@@ -1930,7 +1964,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@packages/di-engine@workspace:packages/di-engine":
+"@packages/di-engine@workspace:^, @packages/di-engine@workspace:packages/di-engine":
   version: 0.0.0-use.local
   resolution: "@packages/di-engine@workspace:packages/di-engine"
   dependencies:
@@ -1993,7 +2027,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@packages/navigation@workspace:packages/navigation":
+"@packages/navigation@workspace:^, @packages/navigation@workspace:packages/navigation":
   version: 0.0.0-use.local
   resolution: "@packages/navigation@workspace:packages/navigation"
   dependencies:
