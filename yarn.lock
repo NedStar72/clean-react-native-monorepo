@@ -2133,7 +2133,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@packages/store-kit@workspace:packages/store-kit"
   dependencies:
+    "@packages/metadata": "workspace:^"
+    "@packages/ts-kit": "workspace:^"
+    mobx: "npm:^6.12.1"
+    reflect-metadata: "npm:^0.2.1"
+    rxjs: "npm:^7.8.1"
     typescript: "npm:5.4.3"
+  peerDependencies:
+    reflect-metadata: "*"
   languageName: unknown
   linkType: soft
 
@@ -7453,6 +7460,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mobx@npm:^6.12.1":
+  version: 6.12.1
+  resolution: "mobx@npm:6.12.1"
+  checksum: 10/4e1f21aef8c9a6780468d1dd1193b418b7a2d93744984baeb903aacef05cc359a560923294504307922359370848b9d05a91aab5a8098460b8474f6a1a0edc74
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -8690,6 +8704,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rxjs@npm:^7.8.1":
+  version: 7.8.1
+  resolution: "rxjs@npm:7.8.1"
+  dependencies:
+    tslib: "npm:^2.1.0"
+  checksum: 10/b10cac1a5258f885e9dd1b70d23c34daeb21b61222ee735d2ec40a8685bdca40429000703a44f0e638c27a684ac139e1c37e835d2a0dc16f6fc061a138ae3abb
+  languageName: node
+  linkType: hard
+
 "safe-array-concat@npm:^1.1.2":
   version: 1.1.2
   resolution: "safe-array-concat@npm:1.1.2"
@@ -9480,7 +9503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.6.2":
+"tslib@npm:^2.0.1, tslib@npm:^2.1.0, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 10/bd26c22d36736513980091a1e356378e8b662ded04204453d353a7f34a4c21ed0afc59b5f90719d4ba756e581a162ecbf93118dc9c6be5acf70aa309188166ca
