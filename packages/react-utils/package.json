@@ -1,0 +1,21 @@
+{
+  "name": "@packages/react-utils",
+  "private": true,
+  "source": "src/index.ts",
+  "react-native": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "deep-equal": "^2.2.3",
+    "hoist-non-react-statics": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/deep-equal": "^1.0.4",
+    "@types/hoist-non-react-statics": "^3.3.5",
+    "@types/react": "^18.2.67",
+    "react": "^18.2.0",
+    "typescript": "5.4.3"
+  }
+}
