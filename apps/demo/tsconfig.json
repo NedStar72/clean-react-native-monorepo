@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "types": ["react-native"],
+    "allowJs": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "emitDeclarationOnly": false,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./index.js", "./app.json", "./src/**/*"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "react-native.config.js"]
+}

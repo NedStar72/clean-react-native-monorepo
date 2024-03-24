@@ -1,0 +1,25 @@
+diff --git a/src/get-nohoist.js b/src/get-nohoist.js
+index 2774902c2fef36e95b96516cbc93506c8072d93e..da4ea429dec224ae2ead171314da5926f85c63e7 100644
+--- a/src/get-nohoist.js
++++ b/src/get-nohoist.js
+@@ -24,17 +24,16 @@ module.exports = function getNohoist(params = {}) {
+     : getWorkspaces({ cwd });
+   const monorepoRoot = getMonorepoRoot({ cwd });
+   const packageJson = require(path.join(monorepoRoot, "package.json"));
+-  const nohoistGlobs = packageJson.workspaces.nohoist || [];
++  const nohoistGlobs = packageJson.nohoist || [];
+ 
+   // Also add nohoist values of "workspaces.nohoist" of the current workspace'
+   // package.json (if any). 
+   const currentWorkspacePackageJson = require(path.join(cwd, "package.json"));
+   if (
+     currentWorkspacePackageJson &&
+-    currentWorkspacePackageJson.workspaces &&
+-    currentWorkspacePackageJson.workspaces.nohoist
++    currentWorkspacePackageJson.nohoist
+   ) {
+-    nohoistGlobs.push(...currentWorkspacePackageJson.workspaces.nohoist);
++    nohoistGlobs.push(...currentWorkspacePackageJson.nohoist);
+   }
+ 
+   return nohoistGlobs

@@ -1,0 +1,30 @@
+{
+  "name": "@apps/demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "install-gems": "bundler install",
+    "install-pods": "cd ios && bundle exec pod install && rm .xcode.env.local && cd .",
+    "install-pods-repo-update": "cd ios && bundle exec pod install --repo-update && cd .",
+    "open-ios": "open ios/Demo.xcworkspace",
+    "open-android": "open -a /Applications/Android\\ Studio.app android",
+    "start": "react-native start",
+    "ios": "react-native run-ios --simulator='iPhone 15'",
+    "android": "react-native run-android"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/runtime": "^7.24.1",
+    "@react-native/babel-preset": "^0.73.21",
+    "@react-native/metro-config": "^0.73.5",
+    "@types/react": "^18.2.67",
+    "@types/react-native": "^0.73.0",
+    "react-native-monorepo-tools": "^1.2.1",
+    "typescript": "5.4.3"
+  }
+}
