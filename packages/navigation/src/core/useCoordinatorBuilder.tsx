@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { inject, useLazyRef } from '@packages/react-utils';
-import NavigationError from '../../NavigationError';
+import NavigationError from '../NavigationError';
 import { BaseOptions, BaseSteps, Config } from './ConfigContext';
 import { NavigatorContextProvider, NavigatorContextProviderProps } from './NavigatorContext';
 import useConfigBuilder, { ConfigBuilderOptions } from './useConfigBuilder';

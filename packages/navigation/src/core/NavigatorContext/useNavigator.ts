@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import NavigationError from '../../../NavigationError';
+import NavigationError from '../../NavigationError';
 import NavigatorContext from './NavigatorContext';
 
 function useNavigator() {

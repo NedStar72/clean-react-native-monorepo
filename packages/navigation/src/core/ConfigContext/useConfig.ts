@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import NavigationError from '../../../NavigationError';
+import NavigationError from '../../NavigationError';
 import { BaseSteps } from './BaseSteps';
 import { BaseOptions } from './Step';
 import ConfigContext, { ConfigContextType } from './ConfigContext';

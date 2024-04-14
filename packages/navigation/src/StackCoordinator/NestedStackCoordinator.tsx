@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationError from '../../NavigationError';
+import NavigationError from '../NavigationError';
 import { BaseSteps, useNavigator, createCoordinatorFactory, useCoordinatorBuilder } from '../core';
 import { StackStepOptions } from './StackStepOptions';
 import StackCoordinatorType from './StackCoordinatorType';

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import NavigationError from '../../../../NavigationError';
+import NavigationError from '../../../NavigationError';
 import { BaseSteps, ConfigIdentifier } from '../../ConfigContext';
 import { useNavigator } from '../../NavigatorContext';
 import StepperContext, { StepperContextType } from '../StepperContext';

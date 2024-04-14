@@ -2,7 +2,7 @@ import React, { useEffect, useId } from 'react';
 import { withForwardedNavigationParams } from 'react-navigation-props-mapper';
 import { useDeepEffect } from '@packages/react-utils';
 import type { ArrayElement } from '@packages/ts-kit';
-import NavigationError from '../../NavigationError';
+import NavigationError from '../NavigationError';
 import {
   BaseOptions,
   BaseSteps,
